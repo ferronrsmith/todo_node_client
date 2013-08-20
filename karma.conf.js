@@ -15,7 +15,7 @@ module.exports = function (config) {
             'js/directives/*.js',
             'js/controllers/*.js',
             'test/vendor/angular-mocks.js',
-            'anuglarjs-jasmine-matchers/*.js',
+            'js/libs/matchers/*.js',
             'test/unit/*.js'
         ],
         reporters: ['progress'/*, 'coverage'*/],
