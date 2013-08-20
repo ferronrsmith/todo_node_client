@@ -1,3 +1,9 @@
 .idea
 coverage
 dist
+logs/*
+!.gitkeep
+libpeerconnection.log
+node_modules/
+.DS_Store
+.idea/
