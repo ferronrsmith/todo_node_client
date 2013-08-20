@@ -1,2 +1,2 @@
-todo_node_client
+TodoMVC AngularJS Application with Node.JS client
 ================
