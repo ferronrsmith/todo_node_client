@@ -1,4 +1,6 @@
-# AngularJS TodoMVC Example (Using a [Node.JS backend](https://github.com/ferronrsmith/todo_node_server))
+# AngularJS TodoMVC Example 
+
+> Uses a [Node.JS backend](https://github.com/ferronrsmith/todo_node_server)
 
 > HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
 
