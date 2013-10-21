@@ -18,34 +18,24 @@ module.exports = function (config) {
             'js/libs/matchers/*.js',
             'test/unit/*.js'
         ],
-        reporters: ['progress'/*, 'coverage'*/],
-//        preprocessors: {
-//            '**/js/controllers/*.js': 'coverage',
-//            '**/js/directives/*.js': 'coverage',
-//            '**/js/services/*.js': 'coverage',
-//            '**/app/scripts/app.js': 'coverage'
-//        },
-//        coverageReporter: {
-//            type: 'html',
-//            dir: 'coverage/'
-//        },
-        port: 9876,
-        runnerPort: 9100,
-        colors: true,
-        logLevel: LOG_INFO, // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
         autoWatch: true,
-        // Start these browsers, currently available:
-        // - Chrome
-        // - ChromeCanary
-        // - Firefox
-        // - Opera
-        // - Safari (only Mac)
-        // - PhantomJS
-        // - IE (only Windows)
         browsers: ['PhantomJS'],
+        junitReporter: {
+            outputFile: 'test_out/unit.xml',
+            suite: 'unit'
+        },
+        reporters: ['progress', 'coverage'],
+        coverageReporter : {
+            type : 'lcov',
+            dir : 'coverage/'
+        },
+        preprocessors : {
+            '**/js/controllers/*.js' : 'coverage',
+            '**/js/directives/*.js' : 'coverage',
+            '**/js/services/*.js' : 'coverage',
+            '**/app/scripts/app.js' : 'coverage'
+        },
         singleRun: false,
         frameworks : ['jasmine']
-
-
     });
 };
