@@ -38,3 +38,5 @@ Get help from other AngularJS users:
 _If you have other helpful links to share, or find any of the links above no longer work, please [let us know](https://github.com/tastejs/todomvc/issues)._
 
 [![Build Status](https://travis-ci.org/ferronrsmith/todo_node_client.png?branch=master)](https://travis-ci.org/ferronrsmith/todo_node_client)
+
+[![Coverage Status](https://coveralls.io/repos/ferronrsmith/todo_node_client/badge.png)](https://coveralls.io/r/ferronrsmith/todo_node_client)
