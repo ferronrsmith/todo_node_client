@@ -23,6 +23,7 @@ todomvc.directive('ngEvent', ['$parse',
                     //Take out first parameter (event object);
                     params = params.splice(1);
 					fn(scope, {$event: evt, $params: params});
+					// check if if there is something to digest
 					if (!scope.$$phase) {
 						scope.$apply();
 					}
